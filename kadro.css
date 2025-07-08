@@ -1,0 +1,292 @@
+/* Genel Ayarlar */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0; 
+  color: #333;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 1.2px;
+}
+
+/* Kadro Konteyneri */
+.team-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 30px;
+}
+
+/* Oyuncu Kartı */
+.player-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+}
+
+.player-photo {
+  width: 100%;
+  aspect-ratio: 1701 / 2560;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #0d47a1;
+}
+
+
+/* Oyuncu Bilgileri */
+.player-info {
+  padding: 20px 15px;
+}
+
+.player-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 8px 0 4px;
+  color: #0d47a1;
+}
+
+.player-position {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.player-number {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #0d47a1;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgb(13 71 161 / 0.6);
+}
+
+/* Responsive */
+@media(max-width: 480px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .player-photo {
+    height: 200px;
+  }
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Genel Ayarlar */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  background-image: url('arkaplan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #7a1f1f;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+#navbar .logo img {
+  height: 60px;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a:focus {
+  background-color: #bf2020;
+  color: #fff;
+}
+
+/* Kadro Konteyneri */
+.team-container {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 30px;
+}
+
+/* Oyuncu Kartı */
+.player-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+}
+
+.player-photo {
+  width: 100%;
+  aspect-ratio: 1701 / 2560;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #0d47a1;
+}
+
+/* Oyuncu Bilgileri */
+.player-info {
+  padding: 20px 15px;
+}
+
+.player-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 8px 0 4px;
+  color: #0d47a1;
+}
+
+.player-position {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.player-number {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #0d47a1;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgb(13 71 161 / 0.6);
+}
+
+/* Responsive */
+@media(max-width: 480px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .player-photo {
+    height: 200px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #7a1f1f;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+/* Footer */
+footer {
+  background-color: #7a1f1f;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  background-image: url('arkaplan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.team-container {
+  max-width: 1100px;
+  margin: 0 auto 50px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
